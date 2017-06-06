@@ -41,3 +41,26 @@ a:hover { color: #03C; }
 ```
 - Elementos relacionados dentro de um módulo usam o nome da base como um prefixo.
 - Os módulos que são uma variação em outro módulo também devem usar o nome do módulo base como um prefixo.
+
+## Regras Básicas
+- Uma regra base é aplicada aos elementos, não inclui qualquer classe ou seletor ID. Com isso é definindo o estilo padrão para como esse elemento deve procurar em todas as ocorrências na página.
+- Os estilos básicos incluem a definição de tamanhos de título, estilos de link padrão, estilos de fonte padrão e fundos do corpo, como mostra abaixo:
+
+```css
+body, form {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #039;
+}
+
+a:hover {
+    color: #03F;    
+}
+```
+### CSS Resets
+- Um Reset CSS é um conjunto de estilos de base destinadas a retirar ou colocar a margem predefinida, preenchimento, e outras propriedades. 
+- O objetivo é definir uma base consistente em todos os navegadores para construir o site.
+- Desenvolver o seu próprio conjunto de estilos padrão que você use consistentemente de projeto para projeto também pode ser vantajoso.
